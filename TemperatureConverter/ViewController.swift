@@ -29,17 +29,6 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-//    override func viewWillLayoutSubviews() {
-//        super.viewWillLayoutSubviews()
-//
-//        let screen = UIScreen.mainScreen()
-//        println("screen fixed bounds: \(screen.fixedCoordinateSpace.bounds)")
-//        println("screen bounds: \(screen.bounds)")
-//        println("top layout guide: \(topLayoutGuide.length)")
-//
-//        self.titleLabel.frame = CGRect(x: 16.0, y: 16.0, width: (screen.bounds.width - 32.0), height: 21)
-//        self.titleLabel.textAlignment = NSTextAlignment.Center
-//    }
 
     func updateTemperatureDisplays() {
         self.celsiusLabel.text = NSString(format: "%.2fC", self.temperatureSlider.value)
